@@ -87,7 +87,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onChildRemoved(DataSnapshot dataSnapshot) {
                         chatMessage chat = dataSnapshot.getValue(chatMessage.class);
-                        messages.add(chat);
+//                        messages.add(chat);
+                        messages.remove(chat);
                         adapter.notifyDataSetChanged();
                     }
 
