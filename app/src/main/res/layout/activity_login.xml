@@ -14,8 +14,79 @@
         android:text="Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="103dp"
         android:id="@+id/loginBtn"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/status"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="You are on login page"
+        android:textSize="18sp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_in_button"
+        android:layout_alignLeft="@+id/loginBtn"
+        android:layout_alignStart="@+id/loginBtn"
+        android:layout_marginBottom="19dp"
+        android:visibility="invisible"
+        android:text="@string/sign_out" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sign_in_button"
+        android:layout_alignLeft="@+id/sign_in_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/sign_in_button"
+        android:layout_alignStart="@+id/sign_in_button"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:text="TextView"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/disconnect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="disconnect_button"
+        android:layout_above="@+id/sign_out_button"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/sign_out_and_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="sign_out_and_disconnect"
+        android:visibility="invisible"
+        android:layout_above="@+id/disconnect_button"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
